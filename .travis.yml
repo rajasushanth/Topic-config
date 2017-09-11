@@ -1,3 +1,13 @@
 language: java
 sudo: false
-script: mvn clean install -Dmaven.test.skip=true
+jdk:
+  - openjdk8
+branches:
+  only:
+  - master
+notifications:
+  email:
+    recipients:
+      - rajasushanth@outlook.com
+    on_success: always
+    on_failure: always
