@@ -5,6 +5,7 @@ jdk:
 branches:
   only:
   - master
+script: mvn clean install -Dmaven.test.skip=true
 deploy:
    provider: cloudfoundry
    api: https://api.run.pivotal.io
