@@ -7,12 +7,10 @@ branches:
   - master
 deploy:
    provider: cloudfoundry
-   username: rajasushanth@outlook.com
-   password: 
-      secure: "a1drz57ErhO6Na+WEGthGjO3h8kHVx0Vx5NpMFexY0zP1rR8/QeRB7mGpPjAIAqttTc+x7jW2l8PiAaKfEEHomCu7CUcGBRoOLoFSS2VJ+zZuJmdW7klSoohAvZOnoKv6bPhrodueq5qVmnYd0YQI5poRW2VyRjKJbgwhWhlvOx16Soa2e1RlEVciSwKZ6WED0LKH7mw09cAeDwIEUiTS5gnf4aBlNfrkuKwK3RZ6jHUXW9pGgGW6/Pz68euavDgyP+LyHzl5AcJfBOQOgZTqo2ipPZ5lJzL7l+8H0xIXFpbXZNIPJYzNtLFnh15rAxSoLyrKFkusRJG2vg9YoM3YrFRA49wvvagN06CgtrhfV1drYJk8mWFz/o2GbUwpYSviRzQ+lVy0iTp8gHkuHejLe8FBNcmM/mp8jk0iVQRsLkVik1fA/0oFUkPoUq1mPL4/JT9gr2Tff3vBHu5KpGIqsOEiqxiSRzjjVU5i1Ow3sWC6egNaIbS9MuRHxezsskJAvs77raNUUgxfZOSzE9J5qRH7uC/krCosdD5dYFZco11FrTffbZ26hdnPJuPNCO2XKFCb2behcCKB3AQcG5tjq7cF+Q3zicTqMdRN3NybzPXPxawGdzydenlSPlqySPjDyOTCoSbFC+nm0qkY7fQe+beo8/6uS1J9B2S17SLyE4="
-   api: https://api.run.pivotal.io
-   organization: Topic
-   space: dev
+   username: $PCF_USERNAME
+   password: $PCF_PASSWORD
+   organization: $PCF_ORG
+   space: $PCF_SPACE
 #notifications:
 #  email:
 #    recipients:
