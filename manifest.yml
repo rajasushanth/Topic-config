@@ -8,6 +8,6 @@ applications:
   path: target/topic-config-0.0.1-SNAPSHOT.jar
   env:
     JAVA_OPTS: "-Xms128m -Xmx512m"
-    CONFIG_USER: $CONFIG_USER
-    CONFIG_PASSWORD: $CONFIG_PASSWORD
+    CONFIG_USER: CONFIG_USER_PLACEHOLDER
+    CONFIG_PASSWORD: CONFIG_PASSWORD_PLACEHOLDER
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
