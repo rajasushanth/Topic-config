@@ -19,16 +19,11 @@ Clone the repository to your local by executing the command in git bash.
 2. Built the WAR module by executing ```mvn clean install```
 
 ## Continous Integration / Continous Deployment - Travis CI
-**Why Travis CI ?**
 
-1. Travis CI is a free Continous Integration service for projects hosted in GitHub
-2. Simple configuration steps through .travis.yml 
-3. Support for deployment of application in Pivotal cloud foundry
-
-**Steps to deploy**
+**Deployment steps**
 1. Sign in to [Travis CI](https://travis-ci.org/) with you GitHub account.
 2. Add the Topic-config repository in Travis CI
-3. Push the app in GitHub, which triggers the build process and deploys the application in Pivotal cloud foundry
+3. Execute ```git push``` for GitHub repository, which triggers the build process and deploys the application in Pivotal cloud foundry
 
 ## Manual Deployment 
 **Running it in local**
