@@ -21,7 +21,7 @@ Clone the repository to your local by executing the command in git bash.
 ## Continous Integration / Continous Deployment - Travis CI
 
 **Deployment steps**
-1. Sign in to [Travis CI](https://travis-ci.org/) with you GitHub account.
+1. Sign in to [Travis CI](https://travis-ci.org/) with your GitHub account.
 2. Add the Topic-config repository in Travis CI
 3. Execute ```git push``` for GitHub repository, which triggers the build process and deploys the application in Pivotal cloud foundry
 
