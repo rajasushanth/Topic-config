@@ -10,14 +10,16 @@ before_deploy:
   - sed -i 's/CONFIG_USER_PLACEHOLDER/'$CONFIG_USER'/g' manifest.yml
   - sed -i 's/CONFIG_PASSWORD_PLACEHOLDER/'$CONFIG_PASSWORD'/g' manifest.yml
 deploy:
-  provider: cloudfoundry
-  api: https://api.run.pivotal.io
-  username: $PCF_USERNAME
-  password: $PCF_PASSWORD
-  organization: $PCF_ORG
-  space: $PCF_SPACE
-after_success:
-  - mvn deploy -Dmaven.test.skip=true -X --settings .bintray-settings.xml
+  - provider: cloudfoundry
+    api: https://api.run.pivotal.io
+    username: $PCF_USERNAME
+    password: $PCF_PASSWORD
+    organization: $PCF_ORG
+    space: $PCF_SPACE
+  - provider: bintray
+    file: bintray.json
+    user: $BINTRAY_USERNAME
+    key: $BINTRAY_API_KEY
 notifications:
   email: false
   slack:
