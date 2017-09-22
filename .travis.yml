@@ -17,7 +17,7 @@ deploy:
   organization: $PCF_ORG
   space: $PCF_SPACE
 after_success:
-  - mvn deploy --settings .bintray-settings.xml
+  - mvn deploy -Dmaven.test.skip=true --settings .bintray-settings.xml
 notifications:
   email: false
   slack:
