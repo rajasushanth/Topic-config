@@ -5,7 +5,7 @@
 
 	<groupId>com.starkinc.ctopic</groupId>
 	<artifactId>topic-config</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>topic-config</name>

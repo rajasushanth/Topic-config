@@ -12,14 +12,14 @@
     "public_stats": false
   },
   "version": {
-    "name": "${project.version}",
-    "released": "${build.timestamp}",
-    "vcs_tag": "v${project.version}"
+    "name": "0.0.1",
+    "released": "2017-09-22",
+    "vcs_tag": "0.0.1"
   },
   "files":
   [
-    {"includePattern": "Topic-config/target/(.*\.jar)", "uploadPattern": "${project.version}/$1"},
-    {"includePattern": "Topic-config/pom.xml", "uploadPattern": "${project.version}/Topic-config.pom"}
+    {"includePattern": "Topic-config/target/(.*\.jar)", "uploadPattern": "$1"},
+    {"includePattern": "Topic-config/pom.xml", "uploadPattern": "pom.xml"}
   ],
   "publish": true
 }
