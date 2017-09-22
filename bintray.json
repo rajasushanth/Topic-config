@@ -18,8 +18,7 @@
   },
   "files":
   [
-    {"includePattern": "Topic-config/target/(.*\.jar)", "uploadPattern": "$1"},
-    {"includePattern": "Topic-config/pom.xml", "uploadPattern": "pom.xml"}
+    {"includePattern": "target/(.*\.jar)", "uploadPattern": "$1"}
   ],
   "publish": true
 }
