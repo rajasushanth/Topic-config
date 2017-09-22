@@ -16,6 +16,8 @@ deploy:
   password: $PCF_PASSWORD
   organization: $PCF_ORG
   space: $PCF_SPACE
+after_success:
+  - mvn deploy --settings travis/travis-settings.xml
 notifications:
   email: false
   slack:
