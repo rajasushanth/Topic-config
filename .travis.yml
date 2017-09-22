@@ -5,7 +5,7 @@ jdk:
 branches:
   only:
   - master
-script: mvn clean install -Dmaven.test.skip=true --settings .bintray-settings.xml
+script: mvn clean install -Dmaven.test.skip=true
 before_deploy:
   - sed -i 's/CONFIG_USER_PLACEHOLDER/'$CONFIG_USER'/g' manifest.yml
   - sed -i 's/CONFIG_PASSWORD_PLACEHOLDER/'$CONFIG_PASSWORD'/g' manifest.yml
@@ -17,7 +17,7 @@ deploy:
   organization: $PCF_ORG
   space: $PCF_SPACE
 after_success:
-  - mvn deploy --settings travis/travis-settings.xml
+  - mvn deploy --settings .bintray-settings.xml
 notifications:
   email: false
   slack:
