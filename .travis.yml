@@ -17,7 +17,7 @@ deploy:
     organization: $PCF_ORG
     space: $PCF_SPACE
   - provider: bintray
-    file: target/topic-config-0.0.1-SNAPSHOT.jar
+    file: topic-config-0.0.1-SNAPSHOT.jar
     user: $BINTRAY_USERNAME
     key: $BINTRAY_API_KEY
 notifications:
